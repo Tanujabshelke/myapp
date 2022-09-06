@@ -1,7 +1,21 @@
-{
+{    
+
   "name": "myapp",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "description": "Testing react-i18next package in myapp",
+  "author": "Tanuja",
+  "keywords": [
+  "react",
+  "react-i18next",
+  "ui"
+],
+"main": "dist/index.js",
+"module": "dist/index.js",
+"files": [
+  "dist",
+  "README.md"
+],
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -13,6 +27,13 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "start": "react-scripts start",
+    "build1": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "build": "del dist &&  babel src/lib --out-dir dist --copy-files"
+  },
+  "scripts1": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -35,5 +56,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/core": "^7.18.13",
+    "@babel/preset-env": "^7.18.10"
   }
 }
